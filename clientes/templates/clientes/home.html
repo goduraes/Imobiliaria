@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap %}
+
+{% block content-header %}
+    <i class="fa fa-table "> </i> Início
+{% endblock content-header %}
+
+{% block content-main %}
+   <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>{{ n_clientes }}</h3>
+
+              <p>Clientes Registrados</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person"></i>
+            </div>
+            <a href="/clientes" class="small-box-footer">Acessar <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xs-12">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>{{ n_imoveis }}</h3>
+
+              <p>Imóveis Cadastrados</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-home"></i>
+            </div>
+            <a href="/imoveis" class="small-box-footer">Acessar <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-xs-12">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>{{ n_alugados }}</h3>
+
+              <p>Imóveis Alugados</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-checkmark"></i>
+            </div>
+            <a href="alugados" class="small-box-footer">Acessar <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+
+    </div>
+    <!-- ./col -->
+{% endblock content-main %}
+    
+{% block extraJS %}
+    
+{% endblock extraJS %}

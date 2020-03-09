@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bootstrap %}
+
+{% block content-header %}
+<i class="fa fa-user "> </i> Editando Cadastro
+    
+{% endblock content-header %}
+{% block content-main %}
+
+<div class="row">
+    <div class="col-xs-12">
+        <form method="POST" style="display: inline">
+            {% csrf_token %}
+            {{ form|bootstrap }}
+            <button type="submit" class="btn btn-success"><b>Salvar</b></button>
+        </form>
+        <a href="../../clientes"><button class="btn btn-danger"><b>Cancelar</b></button></a>
+    </div>
+</div>
+    
+{% endblock content-main %}
+    
+{% block extraJS %}
+    
+{% endblock extraJS %}
